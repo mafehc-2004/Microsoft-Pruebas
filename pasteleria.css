@@ -1,0 +1,21 @@
+.h2{
+    background-color: #b48d8d;
+    text-align: center;
+
+}
+.carta{
+    min-height: 400px;
+    background-color: #f7cf91;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+    
+}
+
+.opcinales{
+    height: 200px;
+    width: 200px;
+    background-color: aliceblue;
+
+}

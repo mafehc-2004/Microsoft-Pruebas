@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sabrosura no como ricura</title>
+    <link rel="stylesheet" href="./pasteleria.css">
 </head>
 <body>
     <header>
@@ -17,99 +18,131 @@
     width="250px"
     heigt="250px">
 
-    <h2>Menu</h2>
+    <h2 class="h2">Menu</h2>
+    <section class="carta">
 
-    <h3>pasteles</h3>
-    <ul>
-        <dt>Cheesecake</dt>
-        <dt>Tiramisú</dt>
-        <dt>Tres Leches</dt>
-    </ul>
+        <div class="opcionales">
+            <h3>pasteles</h3>
+            <ul>
+              <dt>Cheesecake</dt>
+              <dt>chocolate</dt>
+              <dt>Tres Leches</dt>
+            </ul>
+        </div>
+    
+        <div class="opcionales">
+            <h3>balde de helados</h3>
+            <ul>
+                <dt>chocolate</dt>
+                <dt>natamani</dt>
+                <dt>brawnie</dt>
+                <dt>arequipe</dt>
+            </ul>
+        </div>
+    
+        <div class="opcionales">
+            <h3>panes</h3>
+            <ul>
+                <dt>bagutte</dt>
+                <dt>rollo</dt>
+                <dt>sencillo</dt>
+            </ul>
+        
+        </div>
+    </section>
 
-    <h3>balde de helados</h3>
-    <ul>
-        <dt>chocolate</dt>
-        <dt>natamani</dt>
-        <dt>brawnie</dt>
-        <dt>arequipe</dt>
-    </ul>
+    <h2 class="h2">ubicacion</h2>
+    <section class="ubicacion">
+        <p>encuentranos en </p>
+    
+        <table>
+            <tr>
+                <th>ubicacion</th>
+                <th>horarios</th>
+            </tr>
+            <tr>
+                <td>c.c. la estacion </td>
+                <td>9:00 am a 5:00 pm</td>
+            </tr>
+            <tr>
+                <td>centro</td>
+                <td>24 Horas</td>
+            </tr>
+            <tr>
+                <td>santa rita</td>
+                <td>24 Horas</td>
+            </tr>
+        </table>
+    </section>
 
-    <h3>panes</h3>
-    <ul>
-        <dt>bagutte</dt>
-        <dt>rollo</dt>
-        <dt>sencillo</dt>
-    </ul>
-<hr/>
-    <h2>ubicacion</h2>
-    <p>encuentranos en </p>
+    <hr>
 
-    <table>
-        <tr>
-            <th>nombre</th>
-            <th>ubicacion</th>
-            <th>horarios</th>
-        </tr>
-        <tr>
-            <td>c.c. la estacion </td>
-            <td></td>
-            <td>9:00 p.m. a 5:00 p.m</td>
-        </tr>
-        <tr>
-            <td>centro</td>
-            <td></td>
-            <td>24 Horas</td>
-        </tr>
-        <tr>
-            <td>santa rita</td>
-            <td></td>
-            <td>24 Horas</td>
-        </tr>
-    </table>
-<hr>
-    <h2>Pedidos</h2>
-    <h3>Haz tu pedido aqui</h3>
-    <form action="">
-        <p>de que reposteria la deseas...</p>
-    <select name="" id="">
-        <option value="c.c. la estacion">c.c. la estacion</option>
+    <h2 class="h2">Pedidos</h2>
+    <label for="ubicacion">de que reposteria la deseas</label>
+    <select id="lugar" name="lugar">
+        <option value="c.c.">c.c. la estacion</option>
         <option value="centro">centro</option>
-        <option value="santa rita">santa rita </option>
+        <option value="santarita">santa rita</option>
+        
     </select>
 
-    <p>cual torta te antojo ?</p>
-    <input type="checkbox" name="Cheesecake" id="Cheesecake">
-    <label for="cheesecake">cheesecake</label>
-    <input type="number" id="cheesecakeNumber" name="cheesecakeNumber" placeholder="cuantos deseas">
-    <br>
-    <input type="checkbox" name="Tiramisú" id="Tiramisú">
-    <label for="Tiramisú">Tiramisú</label>
-    <input type="number" id="TiramisuNumber" name="TiramisuNumber" placeholder="cuantos deseas">
-    <br>
-    <input type="checkbox" name="Tres Leches" id="Tres Leches">
-    <label for="Tres Leches">Tres Leches</label>
-    <input type="number" id="treslecheskeNumber" name="treslecheskeNumber" placeholder="cuantos deseas">
-    <br>
+    <section class="menu">
+        <div class="menu-tortas">
+            <h3>cual torta te antojo</h3>
+            <input type="checkbox" name="chocolate" id="chocolate">
+            <label for="chocolate">chocolate</label>
+            <select id="acompañntechocolate" name="acompañntechocolate" >
+                <option value="mora">Mora</option>
+                <option value="arequipe">Arequipe</option>
+                <option value="lechecondensada">Leche condensada</option>
+            </select>   
+            <br>
+            <input type="checkbox" name="cheesecake" id="cheesecake">
+            <label for="Tiramisú">cheesecake</label>
+            <input type="number" id="cheesecakeNumber" name="cheesecakeNumber" placeholder="cuantos deseas">
+            <br>
+            <input type="checkbox" name="Tres Leches" id="Tres Leches">
+            <label for="Tres Leches">Tres Leches</label>
+            <input type="number" id="treslecheskeNumber" name="treslecheskeNumber" placeholder="cuantos deseas">
+            <br>
+        </div>
+        <div class="menu-baldes">
+            <h3>cual balde te antojo ?</h3>
+            <input type="checkbox" name="chocolate" id="chocolate">
+            <label for="chocolate ">chocolate</label>
+            <input type="number" id="chocolate" name="chocolate" placeholder="cuantos deseas">
+            <br>
+            <input type="checkbox" name="natamani" id="natamani">
+            <label for="natamani">natamani</label>
+            <input type="number" id="natamani" name="natamani" placeholder="cuantos deseas">
+            <br>
+            <input type="checkbox" name="brawnie" id="brawnie">
+            <label for="brawnie">brawnie</label>
+            <input type="number" id="brawnie" name="brawnie" placeholder="cuantos deseas">
+            <br>
+        </div>
+    </section>
 
-    <p>cual balde te antojo ?</p>
-    <input type="checkbox" name="chocolate" id="chocolate">
-    <label for="chocolate ">chocolate</label><br>
-    <input type="checkbox" name="natamani" id="natamani">
-    <label for="natamani">natamani</label><br>
-    <input type="checkbox" name="brawnie" id="brawnie">
-    <label for="brawnie">brawnie</label>
-
-    <label for="nombre">nombre</label> <br>
-    <input type="text" name="nombre"/> <br>
-
-    <label for="celular">celular</label> <br>
-    <input type="tel" name="telefono" id="telefono" placeholder="ingresar numero de telefono"><br>
-            
-    <label for="correo">correo</label> <br>
-    <input type="email" name="correo" id="correo" placeholder="ingresar correo"><br>
-
-
-    </form>
+<hr>
+    <section id="clientes">
+        <br>
+        <label for="nombre">nombre</label> 
+        <br>
+        <input type="text" name="nombre"placeholder="ingresar tu nombre"/> 
+        <br>
+    
+        <label for="celular">celular</label> <br>
+        <input type="tel" name="telefono" id="telefono" placeholder="ingresar numero de telefono">
+        <br>
+                
+        <label for="correo">correo</label> <br>
+        <input type="email" name="correo" id="correo" placeholder="ingresar correo">
+        <br>
+        <br>
+        <button>hacer pedido</button>
+    
+    </section>
+    
 
 </body>
 </html>
